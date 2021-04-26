@@ -4,10 +4,10 @@
       <a href=""><img src="../assets/logo.jpg" alt=""></a>
     </div>
     <nav class="naviPc">
-      <a href="">Home</a>
-      <a href="">Galeria</a>
-      <a href="">Local</a>
-      <a href="">Contacto</a>
+      <a (click)="goToElement(home)">Home</a>
+      <a (click)="goToElement(galeria)">Galeria</a>
+      <a (click)="goToElement(local)">Local</a>
+      <a (click)="goToElement(contacto)">Contacto</a>
     </nav>
     <div class="burger"> 
       <img (click)="open()" src="../assets/menu_white_24dp.svg" alt=""> 
@@ -15,24 +15,46 @@
   </section>
   <div class="navTele" *ngIf="isOpen">
     <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">Galeria</a></li>
-      <li><a href="">Local</a></li>
-      <li><a href="">Contacto</a></li>
+      <li><a (click)="goToElement(home)">Home</a></li>
+      <li><a (click)="goToElement(galeria)">Galeria</a></li>
+      <li><a (click)="goToElement(local)">Local</a></li>
+      <li><a (click)="goToElement(contacto)">Contacto</a></li>
     </ul>
   </div>
 </header>
 <main>
-  <section class="home">
-    <h1>MAIN</h1>
+  <section class="home"  #home>
+    <h1>Eat. Drink. Love.</h1>
   </section>
-  <section>
-    <h1>Galeria</h1>
+  <section class="galeria"  #galeria>
+    <figure class="cards">
+      <img src="../assets/View.jpg" alt="">
+      <img src="../assets/View2.jpg" alt="">
+      <img src="../assets/View2.jpg" alt="">
+      <img src="../assets/View2.jpg" alt="">
+      <img src="../assets/View2.jpg" alt="">
+      <img src="../assets/View2.jpg" alt="">
+      <img src="../assets/View2.jpg" alt="">
+      <img src="../assets/View2.jpg" alt="">
+      <img src="../assets/View2.jpg" alt="">
+      <img src="../assets/View2.jpg" alt="">
+      <img src="../assets/View2.jpg" alt="">
+      <img src="../assets/View2.jpg" alt="">
+    </figure>
   </section>
-  <section>
-    <h1>Local</h1>
-  </section>
-  <section>
-    <h1>Contacto</h1>
+  <section class="local"  #local>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.212540021191!2d-7.961721697768494!3d41.48857030188813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24daf00907aa97%3A0x1fb3afe6196cd1a3!2sO%20Caneiro!5e0!3m2!1spt-PT!2spt!4v1619476646345!5m2!1spt-PT!2spt" allowfullscreen="" loading="lazy"></iframe>
   </section>
 </main>
+<footer #contacto>
+  <div class="socialMedia">
+    <h5>SIGA-NOS</h5>
+    <a href="https://www.facebook.com/Restaurante-Caneiro-934438229946464/?ref=page_internal" target="_blank"><img src="../assets/facebook-3.svg" alt=""></a>
+    <a href="https://www.instagram.com/restaurante___caneiro/" target="_blank"><img src="../assets/instagram-2-1.svg" alt=""></a>
+  </div>
+  <div class="contacto">
+    <h5>CONTATO</h5>
+    <p>962 895 277</p>
+    <P>restaurante.caneiro@hotmail.com</P>
+  </div>
+</footer>

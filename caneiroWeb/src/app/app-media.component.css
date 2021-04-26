@@ -1,0 +1,42 @@
+@media (max-width:550px) {
+    .naviPc{
+        display: none;
+    }
+
+    .burger{
+        display: flex;
+        margin-right: 20px;
+        margin:auto 10px;
+    }
+
+    .burger img{
+        height: 24px;
+    }
+
+    .navTele{
+        display: block;
+        background-color: rgba(0, 0, 0, 0.952);
+    }
+
+    .burger img:hover{
+        cursor: pointer;
+    }
+
+    .navTele ul li{
+        margin-bottom: 5px;
+    }
+
+    .navTele a{
+        text-decoration: none;
+        margin-left: 10px;
+    }
+
+    .home{
+        width: 100%;
+    }
+    .home h1{
+        font-size: 3em;
+        max-width: 100%;
+        margin: auto;
+    }
+}
