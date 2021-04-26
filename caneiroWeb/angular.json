@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "caneiroWeb"
+  "defaultProject": "caneiroWeb",
+  "cli": {
+    "analytics": "0091fe97-1ce6-4db8-ba71-4a8580c89eb7"
+  }
 }
