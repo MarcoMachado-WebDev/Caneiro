@@ -1,14 +1,26 @@
 <header>
-  <div class="logo">
-    <a href=""><img src="../assets/logo.jpg" alt=""></a>
-
+  <section>
+    <div class="logo">
+      <a href=""><img src="../assets/logo.jpg" alt=""></a>
+    </div>
+    <nav class="naviPc">
+      <a href="">Home</a>
+      <a href="">Galeria</a>
+      <a href="">Local</a>
+      <a href="">Contacto</a>
+    </nav>
+    <div class="burger"> 
+      <img (click)="open()" src="../assets/menu_white_24dp.svg" alt=""> 
+    </div>
+  </section>
+  <div class="navTele" *ngIf="isOpen">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">Galeria</a></li>
+      <li><a href="">Local</a></li>
+      <li><a href="">Contacto</a></li>
+    </ul>
   </div>
-  <nav>
-    <a href="">Home</a>
-    <a href="">Galeria</a>
-    <a href="">Local</a>
-    <a href="">Contacto</a>
-  </nav>
 </header>
 <main>
   <section class="home">

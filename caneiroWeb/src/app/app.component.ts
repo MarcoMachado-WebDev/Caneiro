@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'caneiroWeb';
+  isOpen:boolean = false;
+
+  open(){
+    this.isOpen = !this.isOpen;
+  }
 }

@@ -1,4 +1,4 @@
-header{
+section{
     width: 100%;
     min-height: 100px;
     background-color: black;
@@ -38,8 +38,50 @@ nav a:hover{
     color:black;
 }
 
+.burger{
+    display: none;
+}
+
+.navTele{
+    display: none;
+}
+
 .home{
     background-image: url(../assets/13934676_1148265648563720_3172828379041976498_n.jpg);
     max-width: 1024px;
     min-height: 1000px;  
+}
+
+
+@media (max-width:550px) {
+    .naviPc{
+        display: none;
+    }
+
+    .burger{
+        display: flex;
+        margin-right: 20px;
+        margin:auto 10px;
+    }
+
+    .burger img{
+        height: 24px;
+    }
+
+    .navTele{
+        display: block;
+    }
+
+    .burger img:hover{
+        cursor: pointer;
+    }
+
+    .navTele ul li{
+        margin-bottom: 5px;
+    }
+
+    .navTele a{
+        text-decoration: none;
+        margin-left: 10px;
+    }
 }
